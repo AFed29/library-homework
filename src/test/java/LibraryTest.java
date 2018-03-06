@@ -10,8 +10,8 @@ public class LibraryTest {
     @Before
     public void before() {
         library = new Library(20);
-        book1 = new Book("Flying Solo");
-        book2 = new Book("1984");
+        book1 = new Book("Flying Solo", Genre.AUTOBIOGRAPHY);
+        book2 = new Book("1984", Genre.POLITICALFICTION);
     }
 
     @Test
