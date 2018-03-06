@@ -18,4 +18,15 @@ public class Library {
             this.bookCollection.add(book);
         }
     }
+
+    public Book removeBookByTitle(String bookTitle) {
+        for (Book book : bookCollection) {
+            int index = 0;
+            if (book.getTitle().equals(bookTitle)) {
+                return bookCollection.remove(index);
+            }
+            index++;
+        }
+        return null;
+    }
 }
